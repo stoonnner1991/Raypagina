@@ -56,6 +56,11 @@ body{
     margin: 0;
 }
 
+#fotito{
+    height: 500px;
+    width: 500px;
+}
+
 h1{
     @include fuente();
     font-size: 60px;

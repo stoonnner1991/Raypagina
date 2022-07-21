@@ -48,6 +48,11 @@ body {
   margin: 0;
 }
 
+#fotito {
+  height: 500px;
+  width: 500px;
+}
+
 h1 {
   color: rgb(216, 216, 216);
   font-family: "Courier New", Courier, monospace;
