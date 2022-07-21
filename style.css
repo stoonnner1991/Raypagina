@@ -1,0 +1,153 @@
+@font-face {
+  font-family: GothamHTFUltra;
+  src: url("Gotham HTF Ultra.ttf");
+}
+header h2 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+#nombre {
+  font-family: "GothamHTFUltra";
+  margin-left: 20px;
+  display: flex;
+  height: 50px;
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+}
+
+header {
+  color: rgb(216, 216, 216);
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  top: 0;
+  padding: 10px;
+  font-style: normal;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+}
+
+header nav a {
+  margin-right: 50px;
+}
+
+.opciones {
+  color: rgb(216, 216, 216);
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(49, 49, 49);
+  margin: 0;
+}
+
+h1 {
+  color: rgb(216, 216, 216);
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  font-size: 60px;
+}
+
+#main-container {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 1028px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(39, 39, 39);
+  border-radius: 1%;
+}
+
+#img-container {
+  width: 60%;
+  padding: 40px;
+}
+#img-container img {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 5px;
+}
+
+#descripcion {
+  padding: 40px;
+  color: rgb(216, 216, 216);
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+}
+
+.contenedor-contenido {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contenido {
+  color: rgb(216, 216, 216);
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  background-color: rgb(39, 39, 39);
+  width: 500px;
+  margin: 0 auto;
+  height: 375px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: all 0.8s ease;
+}
+.contenido:hover {
+  transition: all 0.6s ease;
+  filter: opacity(75%);
+}
+.contenido img {
+  height: 282px;
+  width: 500px;
+}
+.contenido p {
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  font-size: 25px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+#galeria {
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 25px;
+  margin-bottom: 60px;
+}
+
+.caja-img {
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-right: 50px;
+  width: 500px;
+  height: 600px;
+}
+.caja-img img {
+  width: 500px;
+  height: 600px;
+  border-radius: 5px;
+  transition: all 0.8s ease;
+}
+.caja-img img:hover {
+  transition: all 0.6s ease;
+  width: 520px;
+  height: 620px;
+}/*# sourceMappingURL=style.css.map */

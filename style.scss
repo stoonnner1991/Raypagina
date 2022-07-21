@@ -1,0 +1,156 @@
+//variables
+$fuente: 'Courier New', Courier, monospace;
+$color-caja: rgb(39, 39, 39);
+$color-resaltado: rgb(51, 51, 51);
+
+@mixin fuente {
+    color: rgb(216, 216, 216);
+    font-family: $fuente;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: GothamHTFUltra;
+    src: url('Gotham HTF Ultra.ttf');
+}
+
+header h2{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#nombre{
+    font-family: 'GothamHTFUltra';
+    margin-left: 20px;
+    display: flex;
+    height: 50px;
+    text-decoration: none;
+    color: rgb(216, 216, 216)
+}
+
+header{
+    @include fuente();
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    padding: 10px;
+    font-style: normal;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+}
+
+header nav a{
+    margin-right: 50px;
+}
+
+.opciones{
+    @include fuente()
+}
+
+body{
+    background-color: rgb(49, 49, 49);
+    margin: 0;
+}
+
+h1{
+    @include fuente();
+    font-size: 60px;
+}
+
+#main-container{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 1028px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    background-color: $color-caja;
+    border-radius: 1%;
+}
+
+#img-container{
+    width: 60%;
+    padding: 40px;
+    img{
+        height: max-content;
+        border-radius: 5px;
+    }
+}
+
+#descripcion{
+    padding: 40px;
+    @include fuente();
+}
+
+.contenedor-contenido{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row
+}
+
+.contenido{
+    @include fuente();
+    background-color: $color-caja;
+    width: 500px;
+    margin: 0 auto;
+    height: 375px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: all 0.8s ease;
+    &:hover{
+        transition: all 0.6s ease;
+        filter:opacity(75%);
+    }
+    img{
+        height: 282px;
+        width: 500px;
+    }
+    p{
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+        font-size: 25px;
+        align-items: center;
+        vertical-align: middle;
+    }
+}
+
+//nsfw
+@mixin estandar-tamaño{
+    width: 500px;
+    height: 600px;
+}
+
+#galeria{
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 25px;
+    margin-bottom: 60px;
+}
+
+.caja-img{
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-right: 50px;
+    @include estandar-tamaño();
+    img{
+        @include estandar-tamaño();
+        border-radius: 5px;
+        transition: all 0.8s ease;
+        &:hover{
+            transition: all 0.6s ease;
+            width: 520px;
+            height: 620px;
+            
+        }
+    }
+}
