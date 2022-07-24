@@ -34,7 +34,15 @@ header {
 }
 
 header nav a {
-  margin-right: 50px;
+  margin-right: 40px;
+  padding: 15px;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+}
+header nav a:hover, header nav a :focus {
+  background-color: rgb(26, 26, 26);
+  color: #f1f1f1;
+  transition: all 0.3s ease;
 }
 
 .opciones {
@@ -58,7 +66,7 @@ h1 {
 #main-container {
   margin: 0 auto;
   margin-top: 100px;
-  width: 1028px;
+  width: 800px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -70,20 +78,28 @@ h1 {
 
 #img-container {
   width: 60%;
-  padding: 40px;
 }
 #img-container img {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   border-radius: 5px;
+  height: 600px;
+  width: 400px;
 }
 
 #descripcion {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 40px;
   color: rgb(216, 216, 216);
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
+  text-align: justify;
+}
+#descripcion h1 {
+  text-align: center;
 }
 
 .contenedor-contenido {
@@ -113,6 +129,7 @@ h1 {
 .contenido img {
   height: 282px;
   width: 500px;
+  cursor: pointer;
 }
 .contenido p {
   text-align: center;
@@ -150,4 +167,77 @@ h1 {
   transition: all 0.6s ease;
   width: 520px;
   height: 620px;
+}
+
+.modal-background {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  position: fixed;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  -webkit-animation-name: transicion;
+          animation-name: transicion;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes transicion {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes transicion {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover, .close :focus {
+  text-decoration: none;
+  color: #bbb;
+  cursor: pointer;
+}
+
+#modal-img {
+  margin: 0 auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
