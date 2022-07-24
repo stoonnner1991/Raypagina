@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,13 +14,26 @@
     </a>
 <nav>
         <a href="#" class="opciones">Inicio</a>
-        <a href="#" class="opciones">Sobre mi</a>
-        <a href="#" class="opciones">Contacto</a>
+        <a href="#" class="opciones" id="sobre-mi">Sobre mi</a>
+        <a href="#" class="opciones" id="contacto">Contacto</a>
 </nav>
 </header>
-<body><div id="main-container">
+<body>
+
+    <div class="modal-background">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" alt="" id="modal-img">
+        </div>
+    </div>
+    
+
+
+
+
+    <div id="main-container">
     <div id="img-container">
-        <a href="#"><img src="mosley.jpg" id="fotito" alt="el-ray"></a>
+        <a href="#"><img src="mosley.jpg" id="fotito" class="imagen" alt="el-ray"></a>
     </div>
     <div id="descripcion">
         <h1>RAINET SLAIFER</h1>
@@ -43,4 +56,5 @@
     </a>
 </div>
 </body>
+<script src="modal.js"></script>
 </html>

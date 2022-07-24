@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria NSFW</title>
+    
 </head>
 <header>
     <a href="index.html" id="nombre">
@@ -13,18 +14,27 @@
     </a>
 <nav>
         <a href="index.html" class="opciones">Inicio</a>
-        <a href="#" class="opciones">Sobre mi</a>
-        <a href="#" class="opciones">Contacto</a>
+        <a href="#" class="opciones" id="sobre-mi">Sobre mi</a>
+        <a href="#" class="opciones" id="contacto">Contacto</a>
 </nav>
 </header>
 <link rel="stylesheet" href="style.css">
 <body>
+    <div class="modal-background">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" alt="" id="modal-img">
+        </div>
+    </div>
     <div id="galeria">
-        <div class="caja-img"><img src="sk01.png" alt=""></div>
-        <div class="caja-img"><img src="sk02.png" alt=""></div>
-        <div class="caja-img"><img src="sk03.png" alt=""></div>
-        <div class="caja-img"><img src="sk04.png" alt=""></div>
-        <div class="caja-img"><img src="sk05.png" alt=""></div>
+        <div class="caja-img"><img class="imagen" src="sk01.png" alt=""></div>
+        <div class="caja-img"><img class="imagen" src="sk02.png" alt=""></div>
+        <div class="caja-img"><img class="imagen" src="sk03.png" alt=""></div>
+        <div class="caja-img"><img class="imagen" src="sk04.png" alt=""></div>
+        <div class="caja-img"><img class="imagen" src="sk05.png" alt=""></div>
+        <div class="caja-img"><img class="imagen" src="sk06.png" alt=""></div>
+        <div class="caja-img"><img class="imagen" src="sk07.png" alt=""></div>
     </div>
 </body>
+<script src="modal.js"></script>
 </html>
